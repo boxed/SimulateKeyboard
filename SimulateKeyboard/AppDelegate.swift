@@ -14,20 +14,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var input: NSTextFieldCell!
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-    @IBAction func gotInput(sender: AnyObject) {
-        NSApplication.sharedApplication().hide(self)
+    @IBAction func gotInput(_ sender: AnyObject) {
+        NSApplication.shared().hide(self)
     }
     
-    func applicationDidHide(notification: NSNotification) {
-        var error: NSDictionary?
-        let task = NSTask()
+    func applicationDidHide(_ notification: Notification) {
+        var _: NSDictionary?
+        let task = Process()
         task.launchPath = "/usr/bin/osascript"
         task.arguments = ["-e", "tell application \"System Events\" to keystroke \"\(self.input.stringValue)\""]
         task.launch()
@@ -37,11 +37,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 class MainWindow: NSWindow {
-    override var canBecomeKeyWindow: Bool {
+    override var canBecomeKey: Bool {
         return true
     }
 
-    override var canBecomeMainWindow: Bool {
+    override var canBecomeMain: Bool {
         return true
     }
 }

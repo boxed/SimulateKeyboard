@@ -155,9 +155,11 @@
 				TargetAttributes = {
 					5B61674C1B28C7E10043DFBD = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0830;
 					};
 					5B61675C1B28C7E10043DFBD = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0830;
 						TestTargetID = 5B61674C1B28C7E10043DFBD;
 					};
 				};
@@ -327,6 +329,7 @@
 				INFOPLIST_FILE = SimulateKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -338,6 +341,7 @@
 				INFOPLIST_FILE = SimulateKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -357,6 +361,7 @@
 				INFOPLIST_FILE = SimulateKeyboardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimulateKeyboard.app/Contents/MacOS/SimulateKeyboard";
 			};
 			name = Debug;
@@ -373,6 +378,7 @@
 				INFOPLIST_FILE = SimulateKeyboardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimulateKeyboard.app/Contents/MacOS/SimulateKeyboard";
 			};
 			name = Release;
@@ -396,6 +402,7 @@
 				5B6167691B28C7E10043DFBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B61676A1B28C7E10043DFBD /* Build configuration list for PBXNativeTarget "SimulateKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +411,7 @@
 				5B61676C1B28C7E10043DFBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
